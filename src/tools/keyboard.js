@@ -1,36 +1,41 @@
 const mainKey = {
   reply_markup: {
     resize_keyboard: true,
-    keyboard: [["Chet elda oliy ta'lim"], ["Aloqa", "Biz haqimizda"]],
+    keyboard: [
+      ["Taomnoma", "Buyurtmalarim"],
+      ["Kissada qancha?"],
+      ["Maʼlumotlarim", "Aloqa"],
+      ["Ijtimoiy tarmoqlarimiz"],
+    ],
   },
 };
 
-const universityKey = {
+const foodKey = {
   reply_markup: {
     resize_keyboard: true,
-    keyboard: [["Oliy ta'lim nomi"], ["Oliy ta'lim nomi", "Oliy ta'lim nomi"]],
+    keyboard: [["Qaynoq qanotcha"]],
   },
 };
 
 const infoKey = {
-  reply_markup: {
-    resize_keyboard: true,
-    inline_keyboard: [
-      [
-        {
-          text: "Fakuletlari",
-          callback_data: "hi",
-        },
-        {
-          text: "Qabul",
-          callback_data: "hi2",
-        },
-      ],
+  resize_keyboard: true,
+  inline_keyboard: [
+    [
+      {
+        text: "Sonini kiritish",
+        callback_data: "soni",
+      },
     ],
-  },
+    [
+      {
+        text: "Manzilni kiritish",
+        callback_data: "manzil",
+      },
+    ],
+  ],
 };
 module.exports = {
   mainKey,
-  universityKey,
+  foodKey,
   infoKey,
 };
